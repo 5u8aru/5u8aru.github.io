@@ -23,26 +23,15 @@
 		 <div class="navbar-wrap">
 			 <ul class="navbar-menu">
 			 <li><a href="/">Home</a></li>
-				 {% if auth %}
-			 <li><a href="/pictures">Pictures</a></li>
-			 <li><a href="/pictures/upload">Upload</a></li>
-			 <li><a href="/logout">Log Out</a></li>
-				 {% else %}
 			 <li><a href="login.html">Log In</a></li>
 			 <li><a href="registration.html">Registration</a></li>
-				 {% endif %}
 		 </ul>
 		 </div>
 	 </div>
  </nav>
     <main class="template" role="main">
-      {% block content %}
         <div class="container">
-        {% if messages %}
-          {% for message in messages %}
-            <div class="alert alert-danger">{{message}}: {{messages[message]}}</div>
-          {% endfor %}
-        {% endif %}
+<!--            <div class="alert alert-danger">{{message}}: {{messages[message]}}</div>-->
       </div>
     <div class="main-container">
             <div class="form-container">
@@ -70,7 +59,6 @@
             </div><!-- FORM FOOTER -->
 
         </div><!-- FORM CONTAINER -->
-      {% endblock %}
     </main>
 <footer>
   <p>Copyright &copy; 2023</p>

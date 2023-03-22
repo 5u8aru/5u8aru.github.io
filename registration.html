@@ -1,12 +1,37 @@
-{% extends "base.html" %}
+<!--{% extends "base.html" %}-->
 
-{% block content %}
-      <div class="container">
-        {% if messages %}
-          {% for message in messages %}
-            <div class="alert alert-danger">{{message}}: {{messages[message]}}</div>
-          {% endfor %}
-        {% endif %}
+<!--{% block content %}-->
+<!--      -->
+<!--{% endblock %}-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Picture upload service</title>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <nav class="navbar">
+	 <div class="container">
+		 <a href="/" class="navbar-brand">Upload Picture Service</a>
+		 <div class="navbar-wrap">
+			 <ul class="navbar-menu">
+			 <li><a href="/">Home</a></li>
+			 <li><a href="login.html">Log In</a></li>
+			 <li><a href="registration.html">Registration</a></li>
+		 </ul>
+		 </div>
+	 </div>
+ </nav>
+    <main class="template" role="main">
+<div class="container">
+<!--            <div class="alert alert-danger">{{message}}: {{messages[message]}}</div>-->
       </div>
         <div class="main-container">
           <div class="form-container">
@@ -37,4 +62,9 @@
             </div><!-- FORM FOOTER -->
 
         </div><!-- FORM CONTAINER -->
-{% endblock %}
+    </main>
+<footer>
+  <p>Copyright &copy; 2023</p>
+</footer>
+</body>
+</html>
